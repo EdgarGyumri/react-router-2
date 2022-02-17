@@ -18,7 +18,7 @@ export default function Posts(){
               {
                 posts.map(item => {
                   return (
-                    <Link to={'' + item.id} key={item.id}>
+                    <Link to={'' + item.id} key={item.id} style={{color: 'inherit', textDecoration:'none'}} >
                       <Post id={item.id} title={item.title} body={item.body} />
                     </Link>
                   )
